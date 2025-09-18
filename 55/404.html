@@ -1,0 +1,6 @@
+<!doctype html><meta charset="utf-8">
+<script>
+  const base="/";
+  const path = location.pathname.startsWith(base) ? location.pathname.slice(base.length) : location.pathname;
+  location.replace(base + "/#" + path + location.search + location.hash);
+</script>
